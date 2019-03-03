@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curso Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <p v-if="mostrar">Esto se está bajo un condicional</p>
+    
+    <p v-if="mostrar">Esto no se está bajo un condicional</p>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script type="text/javascript">
+    let app = new Vue({
+      el: '#app',
+      data: {
+        mostrar: true
+      }
+    })
+  </script>
+</body>
+</html>
