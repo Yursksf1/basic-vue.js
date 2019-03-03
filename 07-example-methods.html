@@ -9,6 +9,11 @@
     <button v-on:click="restar">Restar 1</button>
 
     El contador esta en: {{ contador }}
+    <br>
+    <button @click="contador_dos++">Suma 1</button>
+    <button @click="contador_dos--">Restar 1</button>
+
+    El contador dos esta en: {{ contador_dos }}
   </div>
 
   <script src="https://unpkg.com/vue"></script>
@@ -16,7 +21,8 @@
     let app = new Vue({
       el: '#app',
       data: {
-        contador: 0
+        contador: 0,
+        contador_dos: 0
       },
       methods: {
         sumar () {
