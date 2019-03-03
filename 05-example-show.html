@@ -5,9 +5,15 @@
 </head>
 <body>
   <div id="app">
-    <p v-if="mostrar">Esto se está bajo un condicional</p>
-    
-    <p>Esto no se está bajo un condicional</p>
+    <div v-show="mostrar"> 
+      <p> Esto se está bajo un condicional</p>
+      <p> Esto se está bajo un condicional</p>
+      <p> Esto se está bajo un condicional</p>
+    </div>
+    <div v-show="!mostrar"> 
+        <p>Esto no se está bajo un condicional</p>
+    </div>
+
   </div>
 
   <script src="https://unpkg.com/vue"></script>
@@ -21,3 +27,4 @@
   </script>
 </body>
 </html>
+

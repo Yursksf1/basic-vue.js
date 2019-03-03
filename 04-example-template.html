@@ -5,8 +5,11 @@
 </head>
 <body>
   <div id="app">
-    <p v-if="mostrar">Esto se está bajo un condicional</p>
-    
+    <template v-if="mostrar"> 
+      <p> Esto se está bajo un condicional</p>
+      <p> Esto se está bajo un condicional</p>
+      <p> Esto se está bajo un condicional</p>
+    </template>
     <p>Esto no se está bajo un condicional</p>
   </div>
 
@@ -21,3 +24,4 @@
   </script>
 </body>
 </html>
+
